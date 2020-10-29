@@ -18,7 +18,7 @@ test: off
 branches:
   only:
     - master
-
+    
 environment:
-  my_variable:
+  GH_TOKEN:
     secure: wKpcP/4h8crN/wgqTxp35BBv9c0dLrX3z4et9a2W3znxImFFM9s2wy58tkrn5QTh
