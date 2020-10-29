@@ -17,7 +17,7 @@ test: off
 
 branches:
   only:
-    - master
+    - main
     
 environment:
   GH_TOKEN:

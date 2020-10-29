@@ -42,7 +42,9 @@
     "electron-builder": "^22.9.1"
   },
   "description": "test",
-  "dependencies": {},
+  "dependencies": {
+    "cnpm": "^6.1.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SnowZhang816/testPublisher.git"
