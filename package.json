@@ -5,7 +5,7 @@
   "scripts": {
     "start": "electron .",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder -p always"
+    "dist": "electron-builder -p onTag"
   },
   "build": {
     "appId": "com.sigoden.alphat",
