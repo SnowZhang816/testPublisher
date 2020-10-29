@@ -1,8 +1,57 @@
 {
-    "name": "my-electron-app",
-    "version": "0.1.0",
-    "main": "main.js",
-    "scripts": {
-        "start": "electron ."
+  "name": "my-electron-app",
+  "version": "0.1.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder -p onTagOrDraft"
+  },
+  "build": {
+    "appId": "com.sigoden.alphat",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "category": "Utility",
+      "target": [
+        "deb",
+        "AppImage"
+      ]
     }
+  },
+  "devDependencies": {
+    "electron": "^10.1.5",
+    "electron-builder": "^22.9.1"
+  },
+  "description": "test",
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SnowZhang816/testPublisher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SnowZhang816/testPublisher/issues"
+  },
+  "homepage": "https://github.com/SnowZhang816/testPublisher#readme"
 }
